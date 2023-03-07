@@ -9,7 +9,7 @@ def index_page(request):
 
 
 def homepage(request):
-    return render(request, "home page.html")
+    return render(request, "Home Page.html")
 
 
 def edit_page(request):
