@@ -24,6 +24,7 @@ urlpatterns = [
     path('index/', views.index_page, name='index'),
     path('edit/', views.edit_page, name='edit'),
     path('insert', views.insertdata, name='insertdata'),
+    path('booking/', views.bookingservice, name='booking'),
     path('delete/<id>', views.deleteData, name='deleteData'),
     path('update/<id>', views.updateData, name='updateData')
 ]

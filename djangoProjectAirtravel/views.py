@@ -12,6 +12,10 @@ def homepage(request):
     return render(request, "Home Page.html")
 
 
+def bookingservice(request):
+    return render(request, "Booking Service.html")
+
+
 def edit_page(request):
     return render(request, "edit.html")
 

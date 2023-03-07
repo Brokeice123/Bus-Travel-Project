@@ -11500,7 +11500,7 @@ a:hover {
   min-height: 600px;
   text-align: center;
   color: #fff;
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transition: .2s;
@@ -11632,7 +11632,7 @@ body {
   position: relative;
   text-align: center;
   color: #fff;
-  background-image: url(../imgs/footer.jpg);
+  background-image: url(../img/footer.jpg);
   background-size: cover;
   background-position: bottom;
 }
@@ -11691,7 +11691,7 @@ body.light-theme .theme-selector .spinner i {
 }
 
 body.light-theme .header {
-  background-image: url(../imgs/header-light.jpg);
+  background-image: url(../img/header-light.jpg);
 }
 
 body.light-theme .header .overlay {
