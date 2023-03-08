@@ -2,10 +2,6 @@ from .models import Traveller
 from django.shortcuts import redirect, render
 
 
-def customer_login(request):
-    return render(request, "Customer Login Page.html")
-
-
 def index_page(request):
     data = Traveller.objects.all()
     context = {'data': data}

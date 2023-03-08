@@ -22,7 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage, name='homepage'),
     path('index/', views.index_page, name='index'),
-    path('customer login/', views.customer_login, name='customer login'),
     path('edit/', views.edit_page, name='edit'),
     path('insert', views.insertdata, name='insertdata'),
     path('booking/', views.bookingservice, name='booking'),
