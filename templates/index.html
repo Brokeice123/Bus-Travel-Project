@@ -53,7 +53,17 @@
 
 
                     <div class="form-group">
-                        <input type="text" class="form-control  mt-2" placeholder="Payment" name="payment" required>
+                        <input type="number" class="form-control  mt-2" placeholder="Seat Number" name="seat" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="ID Number" name="id number" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="Amount" name="amount" required>
 
                     </div>
 
@@ -84,7 +94,9 @@
                         <th scope="col">Origin</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Destination</th>
-                        <th scope="col">Payment</th>
+                        <th scope="col">Seat Number</th>
+                        <th scope="col">ID Number</th>
+                        <th scope="col">Amount</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
 
@@ -100,7 +112,9 @@
                         <td>{{d.phone}}</td>
                         <td>{{d.origin}}</td>
                         <td>{{d.destination}}</td>
-                        <td>{{d.payment}}</td>
+                        <td>{{d.seat}}</td>
+                        <td>{{d.id_number}}</td>
+                        <td>{{d.amount}}</td>
                         <td><a href="/update/{{d.id}}" type="button" class="btn btn-warning">Edit</a></td>
                         <td><a href="/delete/{{d.id}}" type="button" class="btn btn-success">Delete</a></td>
                       </tr>

@@ -34,10 +34,12 @@ def insertdata(request):
         phone = request.POST.get('phone')
         origin = request.POST.get('origin')
         destination = request.POST.get('destination')
-        payment = request.POST.get('payment')
+        seat = request.POST.get('seat')
+        id_number = request.POST.get('id number')
+        amount = request.POST.get('amount')
 
         query = Traveller(name=name, email=email, phone=phone, origin=origin, destination=destination,
-                          payment=payment)
+                          seat=seat, id_number=id_number, amount=amount)
         query.save()
         return redirect('index')
     return render(request, "index.html")
@@ -50,7 +52,9 @@ def updateData(request, id):
         phone = request.POST.get('phone')
         origin = request.POST.get('origin')
         destination = request.POST.get('destination')
-        payment = request.POST.get('payment')
+        seat = request.POST.get('seat')
+        id_number = request.POST.get('id number')
+        amount = request.POST.get('amount')
 
         update_info = Traveller.objects.get(id=id)
         update_info.name = name
@@ -58,10 +62,12 @@ def updateData(request, id):
         update_info.phone = phone
         update_info.origin = origin
         update_info.destination = destination
-        update_info.payment = payment
+        update_info.seat = seat
+        update_info.id_number = id_number
+        update_info.amount = amount
 
         update_info.save()
-        return redirect("/")
+        return redirect("index")
 
     d = Traveller.objects.get(id=id)
     context = {"d": d}
